@@ -104,7 +104,7 @@ Enter 0, 1, or 2: `
       console.log(`Score for '${word}': ${scoringAlgorithms[scorer].scorerFunction(word)}`);
    } else if (scorer === 2){
       console.log(`Score for '${word}': ${scoringAlgorithms[scorer].scorerFunction(word)}`);
-   } else {scorerPrompt();}
+   } else {scorerPrompt(word);}
 };
 
 function transform(obj) {
@@ -120,13 +120,6 @@ function transform(obj) {
 };
 
 function runProgram() {
-   // for (scores in oldPointStructure){
-   //    console.log(scores);
-   //    for (i = 0; i < oldPointStructure[scores].length; i++){
-   //       console.log(oldPointStructure[scores][i]);
-   //    }
-   // };
-   // console.log(newPointStructure);
    scorerPrompt(initialPrompt());
 }
 
